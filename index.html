@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Responsive Website!</title>
+</head>
+
+<body>
+    <div class="headings">
+        <h2 class="heading">TACOS</h2>
+        <h2 class="heading">BEERS</h2>
+        <h2 class="heading">WINES</h2>
+        <h2 class="heading">DESSERTS</h2>
+        <h2 class="heading">RESERVATIONS</h2>
+    </div>
+
+    <div class="bigcontent">
+        <div class="content-1">
+            <h1 class="taco">Terry's Taco Joint</h1>
+            <h4 class="taco1">Pretty Good Tacos!</h4>
+        </div>
+
+        <div class="beside">
+            <p class="para">
+            <h1 class="parah">$1.99</h1>
+            Tacos
+            </p>
+        </div>
+
+        <div class="beside1">
+            <p class="para">
+            <h1 class="parah">$3.99</h1>
+            Kombucha
+            </p>
+        </div>
+    </div>
+
+    <div class="containers">
+        <div class="container">
+            <p class="images">🌮</p>
+            <p class="containerh">Tacos</p>
+            <p class="containerp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+        </div>
+
+        <div class="container">
+            <p class="images">🍺</p>
+            <p class="containerh">Beer</p>
+            <p class="containerp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+        </div>
+
+        <div class="container">
+            <p class="images">🍷</p>
+            <p class="containerh">Wine</p>
+            <p class="containerp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+        </div>
+
+        <div class="container">
+            <p class="images">🎵</p>
+            <p class="containerh">Music</p>
+            <p class="containerp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+        </div>
+    </div>
+
+    <div class="middle">
+        <img class="toast" src="https://jolly-kalam-23776e.netlify.app/restaurantwebsite/images/queso-taco.png" alt="">
+        <p class="textof">Featured Taco <br>
+            Slim Profile, easy to hold and loaded with cheese. <br>
+            This is the one you have been waiting for<br>
+            <button type="button" class="btns">Learn more →</button>
+        </p>
+    </div>
+
+    <!-- <div class="display">
+        <img class="toast" src="https://jolly-kalam-23776e.netlify.app/restaurantwebsite/images/queso-taco.png">
+        <p class="context4">
+        <h3 class="h3">Featured Taco</h3>
+        Slim Profile, easy to hold and loaded with cheese.
+        This is the one you have been waiting for</p>
+        <button class="btn">Learn More →</button>
+    </div> -->
+
+    <section class="gallery">
+        <h2 class="instant">Instant Grams</h2>
+        <img class="galleryi" src="https://source.unsplash.com/random/201x201" alt="">
+        <img class="galleryi" src="https://source.unsplash.com/random/202x202" alt="">
+        <img class="galleryi" src="https://source.unsplash.com/random/203x203" alt="">
+        <img class="galleryi" src="https://source.unsplash.com/random/204x204" alt="">
+        <img class="galleryi" src="https://source.unsplash.com/random/205x205" alt="">
+        <img class="galleryi" src="https://source.unsplash.com/random/206x206" alt="">
+        <img class="galleryi" src="https://source.unsplash.com/random/207x207" alt="">
+        <img class="galleryi" src="https://source.unsplash.com/random/207x208" alt="">
+        <img class="galleryi" src="https://source.unsplash.com/random/207x209" alt="">
+        <img class="galleryi" src="https://source.unsplash.com/random/207x210" alt="">
+    </section>
+
+    <script>
+        const navButton = document.querySelector('button[aria-expanded]');
+    
+        function toggleNav({ target }) {
+          const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+          navButton.setAttribute('aria-expanded', !expanded);
+        }
+    
+        navButton.addEventListener('click', toggleNav);
+    </script>
+</body>
+
+</html>
